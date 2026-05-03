@@ -1,7 +1,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
+import pandas as pd
 
+BASE_DIR = os.path.dirname(__file__)
+df = pd.read_csv(os.path.join(BASE_DIR, "final_df.csv"))
 # -----------------------------
 # CONFIG
 # -----------------------------
